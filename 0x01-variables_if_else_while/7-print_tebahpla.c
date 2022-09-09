@@ -7,7 +7,6 @@
 int main(void)
 {
 	char alpha;
-	char beta;
 
 	for (alpha = 'z'; alpha >= 'a'; alpha--)
 	{
