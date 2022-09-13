@@ -2,7 +2,6 @@
 /**
 *print_alphabet - This function print the 26 alphabets
 */
-void print_alphabet(void);
 void print_alphabet(void)
 {
 	char alpha;
@@ -12,5 +11,4 @@ void print_alphabet(void)
 		_putchar(alpha);
 	}
 	_putchar('\n');
-	return (0);
 }
