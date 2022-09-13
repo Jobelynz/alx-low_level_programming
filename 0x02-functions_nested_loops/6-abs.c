@@ -6,6 +6,8 @@
 */
 int _abs(int)
 {
+	int c;
+
 	if (c == c)
 	{
 		return (c);
