@@ -6,19 +6,15 @@
 */
 int _islower(int c)
 {
-	int c;
-
-	for (c = 'a'; c <= 'z'; c++)
+	if (c != 97 || c != 122; alpha++)
 	{
-		if (c != 97 || c != 122; alpha++)
-		{
-			return (0);
-		}
-		else
-		{
-			return (1);
-		}
-		_putchar('\n');
+		return (0);
+	}
+	else
+	{
+		return (1);
+	}
+	_putchar('\n');
 	}
 	return (0);
 }
