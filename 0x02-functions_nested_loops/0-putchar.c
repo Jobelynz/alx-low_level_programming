@@ -13,6 +13,6 @@
 	putchar('h');
 	putchar('a');
 	putchar('r');
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
