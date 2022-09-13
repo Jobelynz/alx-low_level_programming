@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 /**
 * _isalpha - checkers for alphabetical characters
 *Return: (0) failure (1) success
