@@ -10,10 +10,13 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 	i = 0;
 /**
-*	while (i < 10)
+* while - comment
+* while (i < 10)
 *	{
 *		putchar(i);
 *	}
+* @\\o/\n": returns \\o/ on a newline
+* Description: reurns \\o/ on a newline
 */
 	printf("Infinite loop avoided! \\o/\n");
 	return (0);
