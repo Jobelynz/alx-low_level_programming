@@ -18,13 +18,13 @@ int main(void)
 		}
 		else if (i == 1)
 		{
-			printf(", %d", num2);
+			printf(", %ld", num2);
 		}
 		else
 		{
 			num2 += num1;
 			num1 = num2 - num1;
-			print(", %ld", num2);
+			printf(", %ld", num2);
 		}
 		++i;
 	}
