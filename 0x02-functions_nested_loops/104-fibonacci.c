@@ -14,7 +14,7 @@ int main(void)
 
 	unsigned long h1, h2;
 
-	for (c = 0; c < 92; c++)
+	for (c = 0; c < 99; c++)
 	{
 		add = f1 + f2;
 		printf("%lu, ", add);
