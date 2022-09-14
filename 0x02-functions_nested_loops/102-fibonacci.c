@@ -8,18 +8,25 @@ int main(void)
 {
 	long num1 = 1, num2 = 2;
 
-	int i;
+	int i = 0;
 
-	for (i = 0; i < 25; i++)
+	while (i == 0)
 	{
-		if (i == 24)
+		if (i == 0)
 		{
-			printf("%li, %li", num1, num2);
-			continue;
+			printf("%ld", num1);
 		}
-		printf("%li, %li ", num1, num2);
-		num1 += num2;
-		num2 += num1;
+		else if (i == 1)
+		{
+			printf(", %d", num2);
+		}
+		else
+		{
+			num2 += num1;
+			num1 = num2 - num1;
+			print(", %ld", num2);
+		}
+		++i;
 	}
 	printf("\n");
 	return (0);
