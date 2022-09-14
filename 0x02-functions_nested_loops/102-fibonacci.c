@@ -6,28 +6,24 @@
 */
 int main(void)
 {
-	long num1 = 1, num2 = 2;
+	unsigned long num1 = 0, num2 = 1, sum;
 
-	int i = 0;
+	int i;
 
-	while (i == 0)
+	for (i = 0; i < 50; i++)
 	{
-		if (i == 0)
+		sum = num1 + num2;
+		printf("%lu", sum);
+		num1 = num2;
+		num2 = sum;
+		if (i == 49)
 		{
-			printf("%ld", num1);
-		}
-		else if (i == 1)
-		{
-			printf(", %ld", num2);
+			printf("\n");
 		}
 		else
 		{
-			num2 += num1;
-			num1 = num2 - num1;
-			printf(", %ld", num2);
+			printf(",");
 		}
-		++i;
 	}
-	printf("\n");
 	return (0);
 }
