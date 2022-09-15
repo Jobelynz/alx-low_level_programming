@@ -5,18 +5,14 @@
 */
 void print_line(int n)
 {
-	int z;
+	int line;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (z = 0; z < n; x++)
+		for (line = 0; line < n; line++)
 		{
-			_putchar(95);
+			_putchar('_');
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
