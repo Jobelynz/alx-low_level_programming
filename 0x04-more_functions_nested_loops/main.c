@@ -5,22 +5,28 @@
  * @c: argument
  */
 #include <stdio.h>
-int mul(int a, int b);
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int _putchar(char c);
+void print_numbers(void);
 int main(void)
 {
-    printf("%d\n", mul(98, 1024));
-    printf("%d\n", mul(-402, 4096));
+    print_numbers();
     return (0);
 }
 
-#include "main.h"
-/**
-* mul - multiplies two integers
-* @a: first argument
-* @b: second argument
-* Return: 0 Always
-*/
-int mul(int a, int b)
+void print_numbers(void)
 {
-	return (a * b);
+	int i = 0;
+
+	for (i >= 0; i <= 9; i++)
+	{
+//		_putchar((i % 10) + '0');
+	
+		printf("%d", i);
+	}
+	printf("\n");
 }
