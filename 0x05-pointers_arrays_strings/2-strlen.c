@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
 * _strlen -  returns the length of a string.
 * @s: pointer parameter
