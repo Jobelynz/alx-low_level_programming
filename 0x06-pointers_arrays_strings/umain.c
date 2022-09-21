@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n);
 int main(void)
 {
     char s1[98] = "Hello ";
@@ -15,7 +15,11 @@ int main(void)
 
     printf("%s\n", s1);
     printf("%s", s2);
-    ptr = _strcat(s1, s2);
+    ptr = _strncat(s1, s2, 1);
+    printf("%s\n", s1);
+    printf("%s", s2);
+    printf("%s\n", ptr);
+    ptr = _strncat(s1, s2, 1024);
     printf("%s", s1);
     printf("%s", s2);
     printf("%s", ptr);
