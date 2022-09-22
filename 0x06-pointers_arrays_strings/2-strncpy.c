@@ -7,23 +7,19 @@
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int len, j;
+	int i = 0, len = 0;
 
-	len = 0;
-	j = 0;
-	while (src[len])
+	while (src[i++])
 	{
-		len++;
+			len++;
 	}
-	while (j < n && src[j])
+	for (i = 0; src[i] && i < n; i++)
 	{
-		dest[j] = src[j];
-		j++;
+		dest[i] = src[i];
 	}
-	while (j < n)
+	for (i = len; i < n; i++)
 	{
-		dest[j] = '\0';
-		j++;
+		dest[i] = '\0';
 	}
 	return (dest);
 }
