@@ -14,16 +14,15 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	for (byte = 0; byte < size; byte += 10)
 	{
 		printf("%08x: ", byte);
-	}
 		for (index = 0; index < 10; index++)
 		{
 			if ((index + byte) >= size)
 				printf("  ");
-		}
 			else
 				printf("%02x", *(b + index + byte));
 			if ((index % 2) != 0 && index != 0)
 				printf(" ");
+		}
 		for (index = 0; index < 10; index++)
 		{
 			if ((index + byte) >= size)
@@ -37,6 +36,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		if (byte >= size)
 			continue;
 		printf("\n");
+	}
 	if (size <= 0)
 		printf("\n");
 }
