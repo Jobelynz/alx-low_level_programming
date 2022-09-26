@@ -10,21 +10,18 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-	int x, y;
+	int i;
 
-	for (x = 0; s[x]; x++)
+	while (*s)
 	{
-		for (y = 0; accept[y]; y++)
+		for (i = 0; accept[i]; i++)
 		{
-			if (s[x] == accept[j])
+			if (*s == accept[i])
 			{
-				break;
+				return (s);
 			}
 		}
-		if (accept[j])
-		{
-			return (s + x);
-		}
+		s++;
 	}
-	return (0);
+	return ('\0');
 }
