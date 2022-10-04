@@ -34,9 +34,9 @@ char *str_concat(char *s1, char *s2)
 	return (ptr);
 
 	if (s1 == NULL)
-		return (s2);
+		s1 == "";
 	if (s2 == NULL)
-		return (s1);
+		s2 == "";
 	if (!ptr)
 		return (NULL);
 
