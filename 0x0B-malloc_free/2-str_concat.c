@@ -21,6 +21,13 @@ char *str_concat(char *s1, char *s2)
 
 	ptr = malloc(z);
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	if (ptr == NULL)
+		return (NULL);
+
 	for (i = 0; i < x1; i++)
 	{
 		ptr[i] = s1[i];
@@ -32,12 +39,4 @@ char *str_concat(char *s1, char *s2)
 	ptr[z - 1] = '\0';
 
 	return (ptr);
-
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	if (!ptr)
-		return (NULL);
-
 }
