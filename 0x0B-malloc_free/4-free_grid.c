@@ -8,7 +8,7 @@
 * @height: height of grid
 * Return: NULL on failure or width/height equals or 0 or negative
 */
-void free_grid(int **grid, int height);
+void free_grid(int **grid, int height)
 {
 	int index;
 
