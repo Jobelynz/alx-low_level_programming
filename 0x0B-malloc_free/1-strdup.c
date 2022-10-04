@@ -16,13 +16,11 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	dst = (char *)malloc(strlen(str + 3) * sizeof(char));
+	dst = (char *)malloc(strlen((str + 1) + 2) * sizeof(char));
 
 	strcpy(dst, str);
 
 	return (dst);
-
-	free(dst);
 
 	return (0);
 }
