@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 
 	return (ptr);
 
-	if (s1 == NULL || s == NULL)
+	if (s1 == NULL || s2 == NULL)
 		return (" ");
 	if (!ptr)
 		return (NULL);
