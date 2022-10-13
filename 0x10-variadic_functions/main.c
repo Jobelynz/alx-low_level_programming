@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-void print_numbers(const char *separator, const unsigned int n, ...);
+void print_all(const char * const format, ...);
 /**
  * main - check the code
  *
@@ -7,6 +7,6 @@ void print_numbers(const char *separator, const unsigned int n, ...);
  */
 int main(void)
 {
-    print_numbers(", ", 4, 0, 98, -1024, 402);
+    print_all("ceis", 'B', 3, "stSchool");
     return (0);
 }
